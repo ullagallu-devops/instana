@@ -65,7 +65,7 @@ docker run --rm -dit --name payment \
     -e AMQP_USER=roboshop \
     -e AMQP_PASS=roboshop123 \
     --network rb \
-    siva9666/monitoring-v1
+    siva9666/payment-instana:monitoring-v1
 ```
 # dispatch
 ```bash
