@@ -80,3 +80,12 @@ docker run --rm -dit --name dispatch \
 ```bash
 docker run --rm -dit --name web -p 80:80 --network rb siva9666/web-instana:monitoring-v2
 ```
+# web prometheus configuration
+```bash
+docker run --rm -dit \
+  --name web \
+  -p 80:80 \
+  --network rb \
+  -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf:ro \
+  siva9666/web-instana:monitoring-v2
+```
