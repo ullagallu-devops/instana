@@ -1,0 +1,50 @@
+services:
+  mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    image: siva9666/instana-mysql:nih
+  mongo:
+    build:
+      context: ./mongo
+      dockerfile: Dockerfile
+    image: siva9666/instana-mongo:nih
+  rabbit:
+    build:
+      context: ./rabbitmq
+      dockerfile: Dockerfile
+    image: siva9666/instana-rabbit:nih
+  catalogue:
+    build:
+      context: ./catalogue
+      dockerfile: Dockerfile
+    image: siva9666/instana-catalogue:nih
+  cart:
+    build:
+      context: ./cart
+      dockerfile: Dockerfile
+    image: siva9666/instana-cart:nih
+  user:
+    build:
+      context: ./user
+      dockerfile: Dockerfile
+    image: siva9666/instana-user:nih
+  shipping:
+    build:
+      context: ./shipping
+      dockerfile: Dockerfile
+    image: siva9666/instana-shipping:nih
+  payment:
+    build:
+      context: ./payment
+      dockerfile: Dockerfile
+    image: siva9666/instana-payment:nih
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: siva9666/instana-frontend:nih
+
+  
+  
+  
